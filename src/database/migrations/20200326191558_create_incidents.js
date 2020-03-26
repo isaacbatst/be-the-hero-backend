@@ -1,6 +1,6 @@
 
 exports.up = function(knex) {
-  return knex.schema.createTable('ngos', table => {
+  return knex.schema.createTable('incidents', table => {
     table.increments();
 
     table.string('title').notNullable();
